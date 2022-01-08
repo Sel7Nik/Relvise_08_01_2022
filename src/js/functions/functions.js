@@ -1,0 +1,16 @@
+export const isWebp = () => {
+  console.log('isWebp')
+  const testWebp = (callback) => {
+    let webP = new Image()
+    webP.onload = webP.onerror = function () {
+      callback(webP.height == 2)
+    }
+    webP.src =
+      'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA'
+  }
+  //!!!!!!!!!!
+  testWebp((support) => {
+    let className = support === true ? 'webp' : 'no-webp'
+    document.querySelector('html').classList.add(className)
+  })
+}

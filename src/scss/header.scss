@@ -1,0 +1,111 @@
+@use 'sass:math'; //! important
+
+.header {
+  background: url(@img/header-bg.jpg) no-repeat top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+
+  &__container {
+  }
+
+  &__wrap {
+  }
+  &__navbar {
+    display: flex;
+    padding-top: 36px;
+    @include paramAdaptive(margin-bottom, 116, 10);
+    @include paramAdaptive(gap, 132, 10);
+    align-items: center;
+    @media (max-width: $point-6px) {
+      flex-direction: column;
+      @include paramAdaptive(margin-bottom, 45, 10);
+      gap: 25px;
+    }
+  }
+  &__logo-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @extend %Montserrat7Bold;
+    font-size: rem(24);
+    line-height: rem(32);
+    color: $textDarkColor;
+    cursor: pointer;
+    span {
+      @extend %Montserrat5Medium;
+      font-size: rem(16);
+      line-height: rem(24);
+    }
+  }
+}
+.menu-header {
+  &__list {
+    display: flex;
+    gap: rem(21);
+    @extend %Montserrat6SemiBold;
+    font-size: rem(14);
+    line-height: rem(24);
+    color: $textDarkColor;
+    @media (max-width: $point-3px) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &__title {
+    @extend %Montserrat8Black;
+    color: $textDarkColor;
+    @include paramAdaptive(font-size, 58, 14);
+    @include paramAdaptive(line-height, 80, 17);
+    @include widthAdaptive(650, 100);
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    @extend %Montserrat5Medium;
+    @include paramAdaptive(font-size, 20, 14);
+    @include paramAdaptive(line-height, 30, 17);
+    @include widthAdaptive(450, 100);
+    margin-bottom: 45px;
+  }
+
+  &__link-try {
+    display: inline-block;
+    text-align: center;
+    @extend %Montserrat7Bold;
+    font-size: rem(14);
+    line-height: rem(28);
+    padding: 10px 36px;
+    background-color: $OrangeColor;
+    color: #ffffff;
+    border-radius: 37px;
+    margin-left: 0 10px;
+    width: 210px;
+    height: 48px;
+    @media (max-width: $point-6px) {
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__link-learn {
+    display: inline-block;
+    text-align: center;
+    @extend %Montserrat7Bold;
+    font-size: rem(14);
+    line-height: rem(28);
+    padding: 10px 36px;
+    color: $CyanicColor;
+    border: 1px solid $CyanicColor;
+    border-radius: 37px;
+    min-width: 210px;
+  }
+}

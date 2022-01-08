@@ -1,0 +1,60 @@
+//? fonts
+%Montserrat1Thin {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+%Montserrat2ExtraLight {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+%Montserrat3Light {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+%Montserrat4Regular {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+%Montserrat5Medium {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+%Montserrat6SemiBold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+%Montserrat7Bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+%Montserrat8Black {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+%Montserrat9Super {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+//? main Color
+$mainDarkColor: #000;
+$mainLightColor: #fff;
+//? text Color
+$textDarkColor: #252b42;
+$textGrayColor: #737373;
+$textLightColor: #fff;
+
+//? accent Color
+$OrangeColor: #ff7b47;
+$CyanicColor: #0d5c63;
+$CobaltColor: #0d5c63;
+
+//? color scheme
+%basicScheme {
+  // background-color: $mainDarkColor;
+  color: $textGrayColor;
+}
+// %colorSchemeDark {
+//   background-color: $mainDarkColor;
+//   color: $mainLightColor;
+// }
